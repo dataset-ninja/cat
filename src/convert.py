@@ -79,10 +79,11 @@ def convert_and_upload_supervisely_project(
         head = path
         tail = None
         file_name = os.path.basename(path).split(".")[0]
+        prefix = "_pln_" if "pln" in file_name else "_"
         while tail != "imgs":
             head, tail = os.path.split(head)
         img_index = [str(n) for n in file_name if n.isdigit()]
-        mask_name = "mask_" + "".join(img_index) + ".png"
+        mask_name = f"mask{prefix}" + "".join(img_index) + ".png"
         return os.path.join(head, "masks", mask_name)
 
     def create_ann(image_path):
@@ -99,9 +100,7 @@ def convert_and_upload_supervisely_project(
             if len(np.unique(mask_np)) != 1:
                 uniq = np.unique(mask_np)
                 for label in uniq:
-                    if label == 0:
-                        pass
-                    else:
+                    if label != 0:
                         obj_mask = mask_np == label
                         curr_bitmap = sly.Bitmap(obj_mask)
                         obj_class = meta.get_obj_class(classes[label])

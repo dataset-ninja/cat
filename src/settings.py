@@ -34,7 +34,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://ieeexplore.ieee.org/abstract/document/9721297"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 3740395
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = ["https://github.com/dataset-ninja/cat"]
@@ -43,7 +43,9 @@ GITHUB_URL: str = ["https://github.com/dataset-ninja/cat"]
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = ["https://www.cavs.msstate.edu/resources/downloads/CaT/CaT.tar.gz"]
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = [
+    "https://www.cavs.msstate.edu/resources/downloads/CaT/CaT.tar.gz"
+]
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -51,7 +53,9 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = ["https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9721297"]
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = [
+    "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9721297"
+]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
@@ -67,10 +71,12 @@ AUTHORS: Optional[List[str]] = [
     "Christopher Hudson",
     "Sam Ozier",
     "John E. Ball",
-    "Bo Tang"
-    ]
+    "Bo Tang",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["The Institute of Electrical and Electronics Engineers (IEEE)"]
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "The Institute of Electrical and Electronics Engineers (IEEE)"
+]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.ieee.org/"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}

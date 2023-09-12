@@ -21,7 +21,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_4_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive()]
 CATEGORY: Category = Category.SelfDriving()
 
 CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
@@ -37,7 +37,7 @@ HOMEPAGE_URL: str = "https://ieeexplore.ieee.org/abstract/document/9721297"
 PREVIEW_IMAGE_ID: int = 3740395
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = ["https://github.com/dataset-ninja/cat"]
+GITHUB_URL: str = "https://github.com/dataset-ninja/cat"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################

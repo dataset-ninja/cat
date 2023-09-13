@@ -8,4 +8,14 @@ So the proposed dataset facilitates the segmentation of off-road driving trail i
 
 ![Proving Ground Map](https://i.ibb.co/DgGpKS3/tang3-3154419-large.gif)
 
-Authors call this dataset as **CaT** (CAVS Traversability, where CAVS stands for Center for Advanced Vehicular Systems). The pool of 1812 images is separated into *train* and *test* set. Out of all the labelled images, 70% of the images are grouped as training set and remaining 30% are grouped as testing set. While selecting the testing set, authors strictly consider the variability among the images such that the testing images also cover the general and special overview of all the trails considered. 
+The vehicle that used in author's data collection platform along with the sensors placed over it is as shown in picture below. Authors chose the Polaris Ranger crew XP100 due to its’ good ground clearance and stronger chassis with full-body skid plate that is quite favourable for off-road driving. All the sensors are placed on a special wooden structure which we call ’Ranger hat’. In Ranger hat, the lidar and Global Navigation Satellite System/Inertial Navigation System (GNSS/INS) modules are placed vertically up and down. Two cameras are placed on both the sides of GNS/INS module symmetrically.
+
+![Vehicle](https://i.ibb.co/JsWdCLh/tang4-3154419-large.gif)
+
+As shown in this picture, two white modules on both the sides of yellow IMU unit on the ranger hat are the camera sensors we used. These are Sekonix SF3325-100 model with RCCB (Red-Clear-Clear-Blue) color filters and AR0231 CMOS image sensor with an active-pixel array of 1928×1208 with a LED Flicker Mitigation (LFM). With IP69k rating these cameras are capable to resist the effect of adverse environmental conditions like high temperature, dust, and high water pressure. The serialized input-output is supported with MAX96705 GMSL serializer with 27MHz.
+
+The overall collection pipeline along with the connection detailing is shown in the picture below. As shown in the figure, both of the cameras are connected to the ROS (Robotic Operating System) nodes available on the Drive PX2. The output of the camera is transferred over the network through PX2 and are finally saved in the collection computer. All the dataset are collected in rosbag formats which we transfer to the CAVS servers for the final storage. Representative images from each of the trail are selected from the rosbag extractions and provided to the labelers to annotate with the traversability labels.
+
+![Pipeline](https://i.ibb.co/Y06TpQg/tang5-3154419-large.gif)
+
+Authors call this dataset as **CaT** (CAVS Traversability, where CAVS stands for Center for Advanced Vehicular Systems). The pool of 1812 images is separated into ***train*** and ***test*** set. Out of all the labelled images, 70% of the images are grouped as training set and remaining 30% are grouped as testing set. While selecting the testing set, authors strictly consider the variability among the images such that the testing images also cover the general and special overview of all the trails considered. 

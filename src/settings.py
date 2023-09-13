@@ -54,7 +54,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = [
-    "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9721297"
+    "https://ieeexplore.ieee.org/document/9721297"
 ]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
@@ -75,13 +75,14 @@ AUTHORS: Optional[List[str]] = [
 ]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
-    "The Institute of Electrical and Electronics Engineers (IEEE)"
+    "Mississippi State University, Mississippi State, MS, USA",
+    "Dynetics Inc., Huntsville, AL, USA"
 ]
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.ieee.org/"]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.msstate.edu/","https://www.dynetics.com/"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, every image contains name of its location ***brown_field***, ***main_trail***, ***power_line***"
+    "location": ["brown_field", "main_trail", "power_line"]
 }
 TAGS: Optional[List[str]] = None
 

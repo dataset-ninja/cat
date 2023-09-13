@@ -109,7 +109,7 @@ def convert_and_upload_supervisely_project(
         return sly.Annotation(img_size=(img_height, img_wight), labels=labels, img_tags=tag_sly)
 
     obj_class_off = sly.ObjClass("off road", sly.Bitmap, [255, 0, 0])
-    obj_class_pickup = sly.ObjClass("pickup", sly.Bitmap, [255, 255, 0])
+    obj_class_pickup = sly.ObjClass("pickup", sly.Bitmap, [0, 128, 0])
     obj_class_sedan = sly.ObjClass("sedan", sly.Bitmap, [30, 144, 255])
 
     tag_metas = [sly.TagMeta(name, sly.TagValueType.NONE) for name in tag_names]

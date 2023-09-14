@@ -82,7 +82,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.msstate.edu/",
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "location": ["brown_field", "main_trail", "power_line"]
+    "locations": ["brown_field", "main_trail", "power_line"]
 }
 TAGS: Optional[List[str]] = None
 

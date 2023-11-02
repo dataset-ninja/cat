@@ -2,20 +2,18 @@ The creators of the **CaT: CAVS Traversability Dataset** (CAVS stands for the Ce
 
 Due to the well-structured nature of typical on-road scenes, current road extraction processes are largely successful and most types of vehicles are able to traverse through the area that is detected as road. However, the off-road driving domain has many additional uncertainties such as uneven terrain structure, positive and negative obstacles, ditches, quagmires, hidden objects, etc. making it very unstructured. Traversing through such an unstructured area is constrained by a vehicle’s type and its capability. Therefore, an alternative approach to segmentation of the off-road driving trail is required that supports consideration of the vehicle type in a way that is not considered in state-of-the-art on-road segmentation approaches.
 
-![Vehicles classes](https://i.ibb.co/dbHnHqM/tang2-3154419-large.gif)
+<img width="800" alt="cat_preview_1" src="https://github.com/dataset-ninja/cat/assets/123257559/38eb75e6-6b83-4097-a2bb-4d857874c176">
 
 So the proposed dataset facilitates the segmentation of off-road driving trails into three regions based on the nature of the driving area and vehicle capability: ***brown_field***, ***main_trail***, ***power_line***.
 
-![Proving Ground Map](https://i.ibb.co/DgGpKS3/tang3-3154419-large.gif)
+<img width="445" alt="cat_preview_2" src="https://github.com/dataset-ninja/cat/assets/123257559/dd514b45-9319-45fd-923f-7c6fac9ca885">
 
 The vehicle used in the authors' data collection platform along with the sensors placed over it is shown in the picture below. The authors chose the Polaris Ranger crew XP100 due to its’ good ground clearance and stronger chassis with a full-body skid plate that is quite favourable for off-road driving. All the sensors are placed on a special wooden structure which we call 'Ranger hat'. In the Ranger hat, the lidar and Global Navigation Satellite System/Inertial Navigation System (GNSS/INS) modules are placed vertically up and down. Two cameras are placed on both the sides of GNS/INS module symmetrically.
 
-![Vehicle](https://i.ibb.co/JsWdCLh/tang4-3154419-large.gif)
+<img width="401" alt="cat_preview_3" src="https://github.com/dataset-ninja/cat/assets/123257559/a9a19b68-87fe-418f-98e0-231a24e90d7d">
 
 As shown in this picture, two white modules on both the sides of yellow IMU unit on the ranger hat are the camera sensors we used. These are the Sekonix SF3325-100 model with RCCB (Red-Clear-Clear-Blue) color filters and AR0231 CMOS image sensor with an active-pixel array of 1928×1208 with an LED Flicker Mitigation (LFM). With an IP69k rating, these cameras are capable of resisting the effects of adverse environmental conditions like high temperature, dust, and high water pressure. The serialized input-output is supported with an MAX96705 GMSL serializer with 27MHz.
 
 The overall collection pipeline along with the connection detailing is shown in the picture below. As shown in the figure, both of the cameras are connected to the ROS (Robotic Operating System) nodes available on the Drive PX2. The output of the camera is transferred over the network through PX2 and is finally saved in the collection computer. All the datasets are collected in rosbag formats which we transfer to the CAVS servers for the final storage. Representative images from each trail are selected from the rosbag extractions and provided to the labelers to annotate with the traversability labels.
 
-![Pipeline](https://i.ibb.co/Y06TpQg/tang5-3154419-large.gif)
-
-
+<img width="455" alt="cat_preview_4" src="https://github.com/dataset-ninja/cat/assets/123257559/7de19d38-b4e0-45d1-b07d-5e64c2c74a3c">

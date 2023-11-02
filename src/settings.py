@@ -73,6 +73,7 @@ AUTHORS: Optional[List[str]] = [
     "John E. Ball",
     "Bo Tang",
 ]
+AUTHORS_CONTACTS: Optional[List[str]] = ["http://www.cavs.msstate.edu/"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
     "Mississippi State University, Mississippi State, MS, USA",
@@ -131,6 +132,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT

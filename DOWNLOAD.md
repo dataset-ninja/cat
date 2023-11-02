@@ -1,6 +1,6 @@
 Dataset **CaT** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/y/A/Df/H84nzbNGN77Y1hlHZcqBjn5RoC1RP6D1LfXrKoJicpCV8E1gTsLdrdSf0y1vMMqGevyixGJdxWFUam1yeinhXkNqyanvqA3UuZIDzxtbdYLDMIT5uFeJTzyINdGY.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/R/s/vH/vKUlIPS7KPdYaAG7Srut5udhHYVzTRd7rUaHpVg2jFe7vTU3jfqcEXmI3mFbQ43yLODH9CJvB2yC92iJvZPmmWm3hPhyPg3AP1JZpg3TBbt8RluThPtBMOcZihaP.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
